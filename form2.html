@@ -1,0 +1,78 @@
+<HTML>   
+
+<HEAD>  
+	<TITLE>CSC220 -- Form 2</TITLE> 
+	<meta http-equiv="Pragma" content="no-cache">  
+</HEAD>  
+
+ <BODY>   
+	<h1>Form #2</h1>  
+		This form sends a POST request to a php program 
+		named echoform.php, which<br>  
+		echos back on the screen all the environment variables along with the 
+		value of some of<br>  
+		the form elements, depending on whether they are set or not.<br> 
+		<P>  
+		This form uses several form features <P>  
+		<table border="1" bgcolor="#9999cc">  
+		<tr><td>  
+		
+		<FORM ACTION="./phptest/echoform.php" METHOD="POST">  
+
+			Yes, I have read the information: <INPUT TYPE="checkbox" NAME="box" VALUE="yes">
+			<br>(The name of the box above is <i>box</i>)  
+
+			<P> 
+
+			Enter your name in this box <INPUT TYPE="text" NAME="name" SIZE="30"><br>  
+			(the name of this box is <i>name</i>) 
+			
+			<P>    
+			
+			Enter the meaning of life in the box below<br>
+			<TEXTAREA NAME="meaninglife" ROWS=6 COLS=40>(please be brief)</TEXTAREA>
+			<br>(the name of this box is <i>meaninglife</i>) 
+			
+			<P>   
+			
+			Exclusive choice: Do you like apples? 
+			<INPUT TYPE="radio" NAME="apple" VALUE="y" checked>Yes 
+			<INPUT TYPE="radio" NAME="apple" VALUE="n">No
+			<br>(the name of these buttons is <i>apple</i>) 
+			
+			<P>   
+			
+			Multiple choices: Do you eat bananas? 
+			<INPUT TYPE="checkbox" NAME="banana1" VALUE="morning" checked>In the morning 
+			<INPUT TYPE="checkbox" NAME="banana2" VALUE="lunch">At lunch 
+			<br>(the name of these buttons are <i>banana1</i> and <i>banana2</i>) 
+			
+			<P>   
+			
+			One of many: What is your favorite color?  
+			<SELECT NAME="FavoriteColor" SIZE="1">  
+				<OPTION SELECTED>Blue 
+				<OPTION>White 
+				<OPTION>Yellow 
+				<OPTION>Green 
+				<OPTION>Black 
+				<OPTION>Orange 
+				<OPTION>Purple 
+			</SELECT>  
+			<br>(The name of this selection box is <i>FavoriteColor</i>)  
+			
+			<P>  
+			
+			Reset data fields: <INPUT TYPE="reset">  
+			<br>  
+			<P> 
+			Submit data <INPUT TYPE="SUBMIT" VALUE="Click Me!">  
+			<P>
+		</FORM> 
+		</td></tr> 
+		</table>  
+		  
+		
+		<P>CSC220  
+	</BODY> 
+</HTML>
